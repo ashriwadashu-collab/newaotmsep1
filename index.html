@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,36 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
-<header>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="navbar-brand">
-                Sustainable<span> Energy</span>
-            </a>
-
-            <div class="nav-right">
-
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="solar.html" class="nav-link">Solar Energy</a></li>
-                    <li><a href="wind.html" class="nav-link">Wind Power</a></li>
-                    <li><a href="lifestyle.html" class="nav-link">Green Lifestyle</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-
-                <button class="theme-btn" id="themeBtn">
-                    ☾
-                </button>
-
-                <button class="menu-btn" id="menuBtn">
-                    ☰
-                </button>
-
-            </div>
-        </div>
-    </nav>
-</header>
 <style>
     * {
         margin: 0;
@@ -800,9 +769,65 @@
         background: rgba(19, 31, 22, .94);
         color: #c6e3c4;
     }
-</style>
 
+    @media (max-width:768px) {
+
+    .navbar{
+        padding:8px 22px;
+    }
+
+
+    .nav-links{
+        display:none;
+        width:50%;
+        height:auto;
+        background:black;
+        color:white;
+        z-index: 9999;
+    }
+
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+
+    #menuBtn{
+        display:block;
+    }
+
+    }
+</style>
 <body>
+    <header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="navbar-brand">
+                Sustainable<span> Energy</span>
+            </a>
+
+            <div class="nav-right">
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="indexsolarenergy.html" class="nav-link">Solar Energy</a></li>
+                    <li><a href="wind.html" class="nav-link">Wind Power</a></li>
+                    <li><a href="lifestyle.html" class="nav-link">Green Lifestyle</a></li>
+                    <li><a href="indexabout.html" class="nav-link">About</a></li>
+                    <li><a href="indexcontact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <button class="theme-btn" id="themeBtn">
+                    ☾
+                </button>
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+
+            </div>
+        </div>
+    </nav>
+</header>
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-grid">
@@ -1222,7 +1247,6 @@
     </section>
 
     <footer>
-
         <div class="footer-grid">
 
             <div>
