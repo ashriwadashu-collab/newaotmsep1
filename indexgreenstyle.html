@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Energy | Greenova</title>
+    <title>Green Lifestyle | Sustainable Energy</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
@@ -19,8 +20,7 @@
 
     body {
         background: #f5f8f3;
-        color: #1d2b20;
-        transition: .3s ease
+        color: #1d2b20
     }
 
     .navbar {
@@ -33,16 +33,13 @@
         z-index: 1000;
         background: rgba(255, 255, 255, .92);
         backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
         border: 1px solid rgba(52, 92, 58, .12);
         border-radius: 60px;
         padding: 15px 22px;
-        box-shadow: 0 12px 35px rgba(29, 65, 35, .08);
-        transition: .4s ease
+        box-shadow: 0 12px 35px rgba(29, 65, 35, .08)
     }
 
     .nav-container {
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between
@@ -76,8 +73,7 @@
         font-size: 14px;
         font-weight: 500;
         padding: 10px 11px;
-        border-radius: 20px;
-        transition: .25s ease
+        border-radius: 20px
     }
 
     .nav-link:hover {
@@ -89,7 +85,7 @@
     .menu-btn {
         width: 40px;
         height: 40px;
-        border: none;
+        border: 0;
         border-radius: 50%;
         background: #eaf4e8;
         color: #28723b;
@@ -97,51 +93,36 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        justify-content: center;
-        transition: .3s ease
-    }
-
-    .theme-btn:hover {
-        transform: rotate(15deg)
+        justify-content: center
     }
 
     .menu-btn {
         display: none;
-        font-size: 23px
+        font-size: 22px
     }
 
     .hero {
-        min-height: 690px;
+        min-height: 620px;
         padding: 145px 7% 70px;
         display: flex;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
+        align-items: center
     }
 
-    .hero-container,
-    .section-container {
+    .hero-container {
         width: 100%;
         max-width: 1400px;
-        margin: auto;
-        position: relative;
-        z-index: 1
+        margin: auto
     }
 
     .hero-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 65px
-    }
-
-    .hero-content {
-        max-width: 650px
+        gap: 60px
     }
 
     .small-title {
         display: inline-flex;
-        align-items: center;
         gap: 8px;
         padding: 8px 15px;
         border-radius: 30px;
@@ -153,11 +134,11 @@
     }
 
     .hero h1 {
-        font-size: clamp(44px, 6vw, 76px);
-        line-height: 1.04;
+        font-size: clamp(45px, 6vw, 75px);
+        line-height: 1.05;
         font-weight: 800;
         letter-spacing: -3px;
-        margin-bottom: 22px
+        margin-bottom: 20px
     }
 
     .hero h1 span {
@@ -165,73 +146,33 @@
     }
 
     .hero p {
-        max-width: 600px;
+        max-width: 590px;
         color: #607064;
-        font-size: 17px;
-        line-height: 1.75;
+        font-size: 16px;
+        line-height: 1.8;
         margin-bottom: 28px
     }
 
-    .hero-buttons {
-        display: flex;
-        gap: 14px;
-        flex-wrap: wrap
-    }
-
-    .btn-main,
-    .btn-outline {
-        display: inline-flex;
-        align-items: center;
-        border-radius: 35px;
-        font-weight: 600;
-        transition: .3s ease
-    }
-
     .btn-main {
+        display: inline-flex;
         background: #2d7b3d;
         color: white;
-        padding: 14px 25px
+        padding: 14px 25px;
+        border-radius: 35px;
+        font-weight: 600
     }
 
     .btn-main:hover {
         background: #215d2e;
-        color: white;
-        transform: translateY(-3px)
-    }
-
-    .btn-outline {
-        padding: 13px 24px;
-        border: 1px solid #aec5ad;
-        color: #315e38
-    }
-
-    .btn-outline:hover {
-        background: #e7f1e5;
-        color: #285d32
-    }
-
-    .hero-image-box {
-        width: 100%;
-        max-width: 560px;
-        margin-left: auto;
-        position: relative;
-        border-radius: 35px;
-        overflow: hidden;
-        box-shadow: 0 25px 60px rgba(31, 73, 39, .20);
-        animation: cardFloat 5s ease-in-out infinite
+        color: white
     }
 
     .hero-image {
         width: 100%;
-        height: 470px;
-        display: block;
+        height: 420px;
         object-fit: cover;
         border-radius: 35px;
-        transition: .6s ease
-    }
-
-    .hero-image-box:hover .hero-image {
-        transform: scale(1.035)
+        box-shadow: 0 25px 60px rgba(31, 73, 39, .18)
     }
 
     .ticker {
@@ -243,13 +184,14 @@
     }
 
     .ticker-track {
+        display: inline-block;
         animation: ticker 20s linear infinite;
         font-size: 13px;
         font-weight: 600;
         letter-spacing: 2px
     }
 
-    .ticker-track span {
+    .ticker span {
         margin: 0 30px
     }
 
@@ -264,14 +206,15 @@
     }
 
     .section {
-        padding: 82px 7%
+        padding: 75px 7%
     }
 
-    .solar-intro {
-        background: white
+    .container {
+        max-width: 1400px;
+        margin: auto
     }
 
-    .section-tag {
+    .tag {
         color: #4e913f;
         font-size: 13px;
         font-weight: 700;
@@ -280,48 +223,50 @@
         margin-bottom: 10px
     }
 
-    .section-title {
+    .title {
         font-size: clamp(32px, 4vw, 50px);
-        font-weight: 750;
         line-height: 1.15;
-        margin-bottom: 16px
+        margin-bottom: 15px
     }
 
-    .section-text {
+    .text {
         color: #68766b;
-        line-height: 1.75;
+        line-height: 1.8;
         max-width: 700px
     }
 
-    .info-grid {
+    .about {
+        background: white
+    }
+
+    .about-grid {
         display: grid;
-        grid-template-columns: 1.05fr .95fr;
+        grid-template-columns: 1fr 1fr;
         gap: 60px;
         align-items: center
     }
 
-    .solar-image {
+    .about-image {
         width: 100%;
-        height: 410px;
+        height: 350px;
         object-fit: cover;
-        border-radius: 30px;
-        box-shadow: 0 20px 45px rgba(31, 73, 39, .13)
+        border-radius: 28px
     }
 
-    .steps {
+    .habit-section {
         background: #edf4ea
     }
 
-    .center {
+    .heading {
         text-align: center;
-        margin-bottom: 42px
+        margin-bottom: 40px
     }
 
-    .center .section-text {
+    .heading .text {
         margin: auto
     }
 
-    .cards {
+    .habit-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px
@@ -329,82 +274,111 @@
 
     .card {
         background: white;
-        padding: 30px;
-        border-radius: 26px;
+        padding: 28px;
+        border-radius: 24px;
         border: 1px solid #e1e9df;
-        min-height: 245px;
-        transition: .3s ease
+        transition: .3s
     }
 
     .card:hover {
-        transform: translateY(-7px);
-        box-shadow: 0 18px 40px rgba(38, 77, 43, .1)
+        transform: translateY(-6px);
+        box-shadow: 0 15px 35px rgba(38, 77, 43, .1)
     }
 
     .icon {
-        width: 55px;
-        height: 55px;
-        border-radius: 17px;
-        background: #dcefd9;
-        color: #307641;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        background: #e5f2e1;
+        color: #3c8245;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 25px;
-        margin-bottom: 18px
+        font-size: 22px;
+        margin-bottom: 16px
     }
 
     .card h3 {
-        font-size: 20px;
-        margin-bottom: 9px
+        font-size: 18px;
+        margin-bottom: 8px
     }
 
     .card p {
-        color: #69776c;
+        color: #718073;
         font-size: 13px;
-        line-height: 1.75
-    }
-
-    .benefits {
-        background: white
-    }
-
-    .benefit-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px
-    }
-
-    .benefit {
-        padding: 25px;
-        border-radius: 22px;
-        background: #f2f7f0;
-        border: 1px solid #e0e9de;
-        transition: .3s ease
-    }
-
-    .benefit:hover {
-        transform: translateY(-5px)
-    }
-
-    .benefit h4 {
-        font-size: 17px;
-        margin-bottom: 7px
-    }
-
-    .benefit p {
-        font-size: 13px;
-        color: #69776c;
         line-height: 1.7
     }
 
-    .cta {
-        background: #f5f8f3;
-        text-align: center
+    .choices {
+        background: white
     }
 
-    .cta .section-text {
-        margin: 0 auto 24px
+    .choice-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 35px
+    }
+
+    .choice {
+        padding: 30px;
+        border-radius: 25px;
+        background: #f3f7f1;
+        border: 1px solid #e0e9de
+    }
+
+    .choice h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #286b38
+    }
+
+    .choice p {
+        color: #68766b;
+        font-size: 13px;
+        line-height: 1.8
+    }
+
+    .future {
+        background: #183d25;
+        color: white
+    }
+
+    .future-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center
+    }
+
+    .future .tag {
+        color: #9bd485
+    }
+
+    .future .text {
+        color: #c2d2c3
+    }
+
+    .future-list {
+        display: grid;
+        gap: 15px
+    }
+
+    .future-item {
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, .12);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, .04)
+    }
+
+    .future-item h4 {
+        margin-bottom: 6px
+    }
+
+    .future-item p {
+        color: #b9cabb;
+        font-size: 13px;
+        line-height: 1.7
     }
 
     footer {
@@ -447,8 +421,7 @@
         display: block;
         color: #9cad9e;
         font-size: 13px;
-        margin-bottom: 9px;
-        transition: .2s
+        margin-bottom: 9px
     }
 
     .footer-links a:hover {
@@ -476,15 +449,11 @@
         color: white;
         font-size: 20px;
         z-index: 999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         cursor: pointer;
         opacity: 0;
         visibility: hidden;
         transform: translateY(15px);
-        transition: .3s;
-        box-shadow: 0 10px 25px rgba(29, 75, 38, .25)
+        transition: .3s
     }
 
     .scroll-top.show {
@@ -519,16 +488,8 @@
         color: #a9db99
     }
 
-    body.dark .hero {
-        background: #0d1710
-    }
-
-    body.dark .hero:after {
-        background: #1d3a24
-    }
-
     body.dark .hero p,
-    body.dark .section-text {
+    body.dark .text {
         color: #aebcaf
     }
 
@@ -537,54 +498,27 @@
         color: #a7d29a
     }
 
-    body.dark .btn-outline {
-        color: #c9e0ca;
-        border-color: #506452
-    }
-
-    body.dark .solar-intro,
-    body.dark .benefits {
+    body.dark .about,
+    body.dark .choices {
         background: #111c13
     }
 
-    body.dark .steps,
-    body.dark .cta {
+    body.dark .habit-section {
         background: #0d1710
     }
 
-    body.dark .card {
+    body.dark .card,
+    .dark .choice {
         background: #18251a;
         border-color: #293a2c
     }
 
     body.dark .card p,
-    body.dark .benefit p {
+    body.dark .choice p {
         color: #a6b5a8
     }
-
-    body.dark .benefit {
-        background: #18251a;
-        border-color: #293a2c
-    }
-
-    body.dark .calculator {
-        background: #18251a;
-        color: #edf5ed
-    }
-
-    body.dark .calculator input {
-        background: #111c13;
-        color: white;
-        border-color: #354837
-    }
-
-    body.dark .result {
-        background: #203827;
-        color: #b9dfa9
-    }
-
-
 </style>
+
 <body>
     <header>
         <nav class="navbar">
@@ -617,123 +551,137 @@
         </nav>
     </header>
 
+
     <section class="hero">
         <div class="hero-container">
             <div class="hero-grid">
-                <div class="hero-content">
-                    <div class="small-title"><span>☀</span> SOLAR ENERGY</div>
-                    <h1>Power from the <span>Sun.</span></h1>
-                    <p>Solar energy converts sunlight into useful electricity through solar panels. Learn how it works,
-                        why it matters, and how sunlight can become a cleaner energy source.</p>
-                    <div class="hero-buttons">
-                        <a href="#how" class="btn-main">How It Works <span style="margin-left:8px;">→</span></a>
-                        <a href="#calculator" class="btn-outline">Energy Calculator</a>
-                    </div>
+                <div>
+                    <div class="small-title">◉ GREEN LIFESTYLE</div>
+                    <h1>Live Better. <span>Live Green.</span></h1>
+                    <p>Green living is about making smarter choices in the way we travel, shop, eat and use everyday
+                        resources.</p>
+                    <a href="#habits" class="btn-main">Explore Green Habits →</a>
                 </div>
-                <div class="hero-image-box">
-                    <img class="hero-image" src="images/sir1.avif" alt="Solar panels">
+                <div>
+                    <img src="images/sir3.avif" class="hero-image">
                 </div>
             </div>
         </div>
     </section>
+
 
     <div class="ticker">
         <div class="ticker-track">
-            <span>RENEWABLE ENERGY</span>
-            <span>CLEAN FUTURE</span>
-            <span>GREEN TECHNOLOGY</span>
-            <span>SUSTAINABLE LIVING</span>
-            <span>LOWER EMISSIONS</span>
-            <span>RENEWABLE ENERGY</span>
-            <span>CLEAN FUTURE</span>
-            <span>GREEN TECHNOLOGY</span>
+            <span>GREEN LIFESTYLE</span><span>SMART CHOICES</span><span>LESS WASTE</span><span>HEALTHY
+                HABITS</span><span>GREEN LIVING</span>
+            <span>GREEN LIFESTYLE</span><span>SMART CHOICES</span><span>LESS WASTE</span>
         </div>
     </div>
 
-    <section class="section solar-intro" id="how">
-        <div class="section-container">
-            <div class="info-grid">
+    <section class="section about">
+        <div class="container">
+            <div class="about-grid">
                 <div>
-                    <div class="section-tag">What is Solar Energy?</div>
-                    <h2 class="section-title">Turning sunlight into useful power.</h2>
-                    <p class="section-text">Solar energy is energy from the Sun. Solar panels use photovoltaic cells to
-                        convert sunlight into electrical energy that can be used in homes, schools, offices and other
-                        places.</p>
-                    <p class="section-text" style="margin-top:14px;">A solar system can generate electricity during
-                        daylight hours and can work with batteries or the electricity grid to support energy needs.</p>
+                    <div class="tag">Green Living</div>
+                    <h2 class="title">A lifestyle built around mindful choices.</h2>
+                    <p class="text">Green lifestyle means considering how our daily decisions affect the environment. It
+                        can include choosing reusable products, reducing unnecessary consumption and making more
+                        thoughtful travel and food choices.</p>
                 </div>
-                <img class="solar-image" src="images/sir1.avif" alt="Solar energy installation">
+                <img src="images/sir1.avif" class="about-image">
             </div>
         </div>
     </section>
 
-    <section class="section steps">
-        <div class="section-container">
-            <div class="center">
-                <div class="section-tag">How It Works</div>
-                <h2 class="section-title">From sunlight to electricity.</h2>
-                <p class="section-text">The basic solar power process can be understood in three simple steps.</p>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="icon">☀</div>
-                    <h3>1. Sunlight</h3>
-                    <p>Sunlight reaches the photovoltaic cells inside solar panels and provides the energy needed to
-                        start the process.</p>
-                </div>
-                <div class="card">
-                    <div class="icon">ϟ</div>
-                    <h3>2. Electricity</h3>
-                    <p>Photovoltaic cells convert sunlight into direct-current electrical energy.</p>
-                </div>
-                <div class="card">
-                    <div class="icon">⌁</div>
-                    <h3>3. Usable Power</h3>
-                    <p>An inverter converts the electricity into a form that can power everyday electrical devices.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section benefits">
-        <div class="section-container">
-            <div class="center">
-                <div class="section-tag">Benefits</div>
-                <h2 class="section-title">Why solar energy matters.</h2>
-                <p class="section-text">Solar power offers several practical and environmental benefits when used
-                    appropriately.</p>
+    <section class="section habit-section" id="habits">
+        <div class="container">
+            <div class="heading">
+                <div class="tag">Everyday Habits</div>
+                <h2 class="title">Make your routine greener.</h2>
+                <p class="text">Simple changes can become practical habits without making everyday life complicated.</p>
             </div>
-            <div class="benefit-grid">
-                <div class="benefit">
-                    <h4>Renewable Source</h4>
-                    <p>Sunlight is a naturally replenishing source of energy available every day.</p>
+            <div class="habit-grid">
+                <div class="card">
+                    <div class="icon">♻</div>
+                    <h3>Reuse Products</h3>
+                    <p>Prefer reusable bottles, bags and containers instead of single-use alternatives.</p>
                 </div>
-                <div class="benefit">
-                    <h4>Lower Emissions</h4>
-                    <p>Generating electricity from sunlight can reduce reliance on fossil-fuel-based electricity.</p>
+                <div class="card">
+                    <div class="icon">🚲</div>
+                    <h3>Choose Better Travel</h3>
+                    <p>Walk, cycle or use public transport when these options are practical for your journey.</p>
                 </div>
-                <div class="benefit">
-                    <h4>Energy Independence</h4>
-                    <p>Solar systems can help homes and organisations generate part of their own electricity.</p>
+                <div class="card">
+                    <div class="icon">🥗</div>
+                    <h3>Mindful Food</h3>
+                    <p>Reduce food waste and plan meals carefully so that resources are used efficiently.</p>
                 </div>
-                <div class="benefit">
-                    <h4>Long-Term Value</h4>
-                    <p>Once installed, solar panels can continue producing electricity for many years with proper care.
-                    </p>
+                <div class="card">
+                    <div class="icon">🛍</div>
+                    <h3>Shop Carefully</h3>
+                    <p>Buy what you need and consider durable products instead of unnecessary purchases.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌱</div>
+                    <h3>Grow Plants</h3>
+                    <p>Adding plants to your surroundings can make spaces greener and more pleasant.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🧹</div>
+                    <h3>Keep It Clean</h3>
+                    <p>Dispose of waste properly and help keep your home and surroundings clean.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section cta">
-        <div class="section-container">
-            <div class="section-tag">Explore More</div>
-            <h2 class="section-title">Solar is one part of a cleaner energy future.</h2>
-            <p class="section-text">Explore wind power and green lifestyle ideas to understand the bigger picture of
-                sustainable living.</p>
-            <div class="hero-buttons" style="justify-content:center;margin-top:24px;">
-                <a href="wind.html" class="btn-main">Explore Wind Power →</a>
-                <a href="lifestyle.html" class="btn-outline">Green Lifestyle</a>
+
+    <section class="section choices">
+        <div class="container">
+            <div class="tag">Smart Choices</div>
+            <h2 class="title">Green choices at home.</h2>
+            <div class="choice-grid">
+                <div class="choice">
+                    <h3>Kitchen</h3>
+                    <p>Plan meals, store food properly and avoid throwing away usable food.</p>
+                </div>
+                <div class="choice">
+                    <h3>Shopping</h3>
+                    <p>Choose durable products and avoid buying items that you do not really need.</p>
+                </div>
+                <div class="choice">
+                    <h3>Travel</h3>
+                    <p>For suitable trips, consider walking, cycling, public transport or sharing a ride.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section future">
+        <div class="container">
+            <div class="future-grid">
+                <div>
+                    <div class="tag">Live With Purpose</div>
+                    <h2 class="title">Small lifestyle changes can become a daily routine.</h2>
+                    <p class="text">The goal is not perfection. A sustainable lifestyle grows through realistic choices
+                        that can be maintained over time.</p>
+                </div>
+                <div class="future-list">
+                    <div class="future-item">
+                        <h4>01 — Buy Less</h4>
+                        <p>Think before purchasing and choose products that have real use.</p>
+                    </div>
+                    <div class="future-item">
+                        <h4>02 — Waste Less</h4>
+                        <p>Reuse, repair and recycle materials whenever practical.</p>
+                    </div>
+                    <div class="future-item">
+                        <h4>03 — Choose Wisely</h4>
+                        <p>Consider the environmental effect of everyday decisions.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
