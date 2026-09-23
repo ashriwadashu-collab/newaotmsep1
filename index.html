@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -772,62 +773,245 @@
 
     @media (max-width:768px) {
 
-    .navbar{
-        padding:8px 22px;
-    }
+     .navbar {
+            top: 10px;
+            width: 94%;
+            padding: 8px 22px;
+        }
+
+        .navbar-brand {
+            font-size: 16px;
+        }
+
+        .menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 
-    .nav-links{
-        display:none;
-        width:50%;
-        height:auto;
-        background:black;
-        color:white;
-        z-index: 9999;
-    }
-
-    .navbar-brand{
-        font-size: 22px;
-    }
+        .nav-links.active {
+            display: flex;
+        }
 
 
-    #menuBtn{
-        display:block;
-    }
+        .nav-links {
+            position: absolute;
+            top: 58px;
+            right: 0;
+            width: 220px;
+            display: none;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 3px;
+            padding: 12px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+        }
 
+        .nav-link {
+            display: block;
+            padding: 11px 14px;
+            font-size: 13px;
+        }
+
+
+        .hero {
+            min-height: auto;
+            padding: 125px 6% 50px;
+        }
+
+        .hero-grid {
+            grid-template-columns: 1fr;
+            gap: 35px;
+        }
+
+        .hero-content {
+            max-width: 100%;
+        }
+
+        .small-title {
+            font-size: 10px;
+            padding: 7px 12px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            letter-spacing: -2px;
+        }
+
+        .hero p {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            gap: 10px;
+        }
+
+        .btn-main,
+        .btn-outline {
+            padding: 12px 18px;
+            font-size: 13px;
+        }
+
+        .hero-image-box {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .hero-image {
+            height: 330px;
+        }
+
+        .section {
+            padding: 60px 6%;
+        }
+
+
+        .intro-grid,
+        .energy-heading,
+        .future-grid {
+            grid-template-columns: 1fr;
+            gap: 35px;
+        }
+
+        .intro-cards {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .intro-card {
+            padding: 22px;
+            min-height: 180px;
+        }
+
+        .intro-card h3 {
+            font-size: 18px;
+        }
+
+        .intro-card p {
+            font-size: 12px;
+        }
+
+        .section-title {
+            font-size: 32px;
+        }
+
+        .section-text {
+            font-size: 14px;
+        }
+
+        .why-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .why-card {
+            padding: 20px;
+            min-height: 190px;
+        }
+
+        .why-card h4 {
+            font-size: 16px;
+        }
+
+        .why-card p {
+            font-size: 12px;
+        }
+
+        .energy-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .energy-card {
+            min-height: 300px;
+        }
+
+        .future-grid {
+            gap: 25px;
+        }
+
+        .future-number {
+            font-size: 38px;
+        }
+
+        .action-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .action-card {
+            padding: 22px 15px;
+            min-height: 190px;
+        }
+
+        .action-card h4 {
+            font-size: 15px;
+        }
+
+        .action-card p {
+            font-size: 12px;
+        }
+
+        footer {
+            padding: 45px 6% 20px;
+        }
+
+       
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+
+        .footer-brand {
+            font-size: 22px;
+        }
+
+        footer p,
+        .footer-links a {
+            font-size: 12px;
+        }
+
+        .copyright {
+            margin-top: 25px;
+        }
     }
 </style>
+
 <body>
     <header>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="navbar-brand">
-                Sustainable<span> Energy</span>
-            </a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="navbar-brand">
+                    Sustainable<span> Energy</span>
+                </a>
 
-            <div class="nav-right">
+                <div class="nav-right">
 
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="indexsolarenergy.html" class="nav-link">Solar Energy</a></li>
-                    <li><a href="indexwind.html" class="nav-link">Wind Power</a></li>
-                    <li><a href="indexgreenstyle.html" class="nav-link">Green Lifestyle</a></li>
-                    <li><a href="indexabout.html" class="nav-link">About</a></li>
-                    <li><a href="indexcontact.html" class="nav-link">Contact</a></li>
-                </ul>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="indexsolarenergy.html" class="nav-link">Solar Energy</a></li>
+                        <li><a href="indexwind.html" class="nav-link">Wind Power</a></li>
+                        <li><a href="indexgreenstyle.html" class="nav-link">Green Lifestyle</a></li>
+                        <li><a href="indexabout.html" class="nav-link">About</a></li>
+                        <li><a href="indexcontact.html" class="nav-link">Contact</a></li>
+                    </ul>
 
-                <button class="theme-btn" id="themeBtn">
-                    ☾
-                </button>
+                    <button class="theme-btn" id="themeBtn">
+                        ☾
+                    </button>
 
-                <button class="menu-btn" id="menuBtn">
-                    ☰
-                </button>
+                    <button class="menu-btn" id="menuBtn">
+                        ☰
+                    </button>
 
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-grid">
