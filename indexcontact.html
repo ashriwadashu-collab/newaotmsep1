@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -305,7 +306,158 @@
         background: #1b542c;
         transform: translateY(-2px);
     }
+
+
+    @media (max-width: 768px) {
+
+        .navbar {
+            top: 10px;
+            width: 94%;
+            padding: 8px 22px;
+        }
+
+        .navbar-brand {
+            font-size: 16px;
+        }
+
+        .menu-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .nav-links.active {
+            display: flex;
+        }
+
+
+        .nav-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 220px;
+            display: none;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 3px;
+            padding: 12px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+        }
+
+        .nav-link {
+            display: block;
+            padding: 11px 14px;
+            font-size: 13px;
+        }
+
+        .login-section {
+            min-height: 100vh;
+            padding: 120px 18px 50px;
+            align-items: center;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px 22px;
+            border-radius: 22px;
+        }
+
+        .login-box h1 {
+            font-size: 28px;
+            margin-bottom: 7px;
+        }
+
+        .login-box>p {
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 17px;
+        }
+
+        .form-group label {
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+
+        .form-group input {
+            padding: 12px 13px;
+            font-size: 13px;
+            border-radius: 10px;
+        }
+
+        .login-options {
+            margin-bottom: 20px;
+            font-size: 11px;
+            gap: 10px;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .forgot {
+            font-size: 11px;
+        }
+
+        #loginBtn {
+            padding: 13px;
+            font-size: 14px;
+            border-radius: 25px;
+        }
+
+        .register {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+
+    
+        footer {
+            padding: 40px 7% 20px;
+        }
+
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+
+        .footer-brand {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .footer-title {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        .copyright {
+            margin-top: 25px;
+            padding-top: 15px;
+            font-size: 10px;
+            line-height: 1.6;
+        }
+    }
 </style>
+
 <body>
     <header>
         <nav class="navbar">
@@ -466,4 +618,5 @@
     </script>
 
 </body>
+
 </html>
